@@ -19,11 +19,11 @@ videoRouter.post(routes.upload, uploadVideo, postUpload);
 // Video Detail
 videoRouter.get(routes.videoDetail(), videoDetail);
 
-//Edit Video
+// Edit Video
 videoRouter.get(routes.editVideo(), getEditVideo);
 videoRouter.post(routes.editVideo(), postEditVideo);
 
-//Delete Video
+// Delete Video
 videoRouter.get(routes.deleteVideo(), deleteVideo);
 
 export default videoRouter;
