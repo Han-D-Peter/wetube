@@ -15,10 +15,10 @@ const config = {
         test: /\.(js)$/,
         use: [
           {
-            loader:"babel-loader"
+            loader: "babel-loader"
           }
         ]
-      }
+      },
       {
         test: /\.(scss)$/,
         use: ExtractCSS.extract([
