@@ -41,7 +41,7 @@ const getVideo = async () => {
     streamObject = stream;
     startRecording();
   } catch (error) {
-    recordBtn.innerHTML = "Cant record";
+    recordBtn.innerHTML = "☹️ Cant record";
   } finally {
     recordBtn.removeEventListener("click", getVideo);
   }
@@ -49,7 +49,6 @@ const getVideo = async () => {
 
 function init() {
   recordBtn.addEventListener("click", getVideo);
-  recordBtn.onclick = getVideo;
 }
 
 if (recorderContainer) {

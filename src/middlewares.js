@@ -20,7 +20,7 @@ const multerAvatar = multer({
   storage: multerS3({
     s3,
     acl: "public-read",
-    bucket: "wetube/avatars"
+    bucket: "wetube/avatar"
   })
 });
 
