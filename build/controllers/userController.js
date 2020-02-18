@@ -333,25 +333,26 @@ function () {
 
           case 4:
             user = _context5.sent;
+            console.log(user);
             res.render("userDetail", {
               pageTitle: "User Detail",
               user: user
             });
-            _context5.next = 12;
+            _context5.next = 13;
             break;
 
-          case 8:
-            _context5.prev = 8;
+          case 9:
+            _context5.prev = 9;
             _context5.t0 = _context5["catch"](1);
             req.flash("error", "User not found");
             res.redirect(_routes["default"].home);
 
-          case 12:
+          case 13:
           case "end":
             return _context5.stop();
         }
       }
-    }, _callee5, null, [[1, 8]]);
+    }, _callee5, null, [[1, 9]]);
   }));
 
   return function userDetail(_x14, _x15) {
