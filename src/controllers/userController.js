@@ -115,6 +115,7 @@ export const getMe = async (req, res) => {
     const user = await User.findById(req.user.id).populate("videos");
     res.render("userDetail", { pageTitle: "User Detail", user });
   } catch (error) {
+    req.flash("error", "User not found")
     res.redirect(routes.home);
   }
 };
